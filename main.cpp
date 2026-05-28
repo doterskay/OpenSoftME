@@ -30,8 +30,16 @@ int main(){
             cout << "\n Time: "<< local-> tm_hour<< ":"
             << local->tm_min << ":" << local->tm_sec << "\n";
         }
-        
-    
+
+        if(choice == 2) {
+             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
+        }
+        if (choice == 3) { 
+            cout << "\nTime: "<< local-> tm_hour<< ":"
+            << local->tm_min << ":" << local->tm_sec << "\n";
+            cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
+
+        }
     } while (choice != 0);
    
     return 0;

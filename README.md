@@ -3,6 +3,9 @@ Hi, this is my first attempt at coding in C++.
 
 
 version 1.0
+
+
+
  // SetConsoleOutputCP(CP_UTF8);
     // time_t now = time(0);
     // tm* local = localtime(&now);
