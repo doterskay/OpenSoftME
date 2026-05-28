@@ -5,26 +5,34 @@
 using namespace std;
 
 int main(){
-    SetConsoleOutputCP(CP_UTF8);
-    time_t now = time(0);
-    tm* local = localtime(&now);
-    
-    string months[]={"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+    int choice;
 
-    cout << "\n┌─────────────────────────────────┐\n";
-    cout << "│         SYSTEM TIME v1.0        │\n";
-    cout << "├─────────────────────────────────┤\n";
-    cout << "│ DATE: ";
-    cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
-    cout << "               │\n";
-    cout << "│ TIME : ";
-    cout << local -> tm_hour << ":";;
-    if (local-> tm_min < 10) cout << "0";
-    cout << local->tm_min<< ":"; 
-    if( local -> tm_sec < 10) cout << "0";
-    cout << local -> tm_sec;
-    cout << "                  │\n";
-    cout << "└─────────────────────────────────┘\n";
+
+    do{
+        SetConsoleOutputCP(CP_UTF8);
+        cout << "\n┌─────────────────────────────────┐\n";
+        cout << "│         SYSTEM TIME v1.1        │\n";
+        cout << "├─────────────────────────────────┤\n";
+        cout << "  1 - Показать время\n";
+        cout << "  2 - Показать дату\n";
+        cout << "  3 - Показать всё\n";
+        cout << "  0 - Выйти\n";
+
+        string months[]={"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+        cout << "└─────────────────────────────────┘\n";
+        cin >> choice;
+        
+        time_t now = time(0);
+        tm* local = localtime(&now);
+
+
+        if(choice == 1) {
+            cout << "\n Time: "<< local-> tm_hour<< ":"
+            << local->tm_min << ":" << local->tm_sec << "\n";
+        }
+        
     
+    } while (choice != 0);
+   
     return 0;
 }
