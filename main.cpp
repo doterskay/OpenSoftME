@@ -24,6 +24,7 @@ int main(){
         cout << "  3 - VK в браузере      \n";
         cout << "  4 - Spotify в браузере      \n";
         cout << "  5 - Ping in DNS 8.8.8.8      \n";
+        cout << "  6 - Открыть впн      \n";
         cout << "  0 - Выйти\n";
         cout << "└─────────────────────────────────┘\n";
         cin >> choice;
@@ -57,6 +58,11 @@ int main(){
             cout<< "PING WIFI\n";
             system("ping 8.8.8.8 -n 3");
         }
+        else if ( choice == 6){
+                  cout << "Open VPN";
+        system("start \"\" \"C:\\Program Files (x86)\\v2RayTun\\v2RayTun.exe\"");
+
+        }
      
       
         
@@ -64,3 +70,4 @@ int main(){
    
     return 0;
 }
+// C:\Program Files (x86)\v2RayTun
