@@ -19,6 +19,8 @@ int main(){
         cout << "  3 - Показать всё\n";
         cout << "  4 - Открыть YouTube в браузере      \n";
         cout << "  5 - VK в браузере      \n";
+        cout << "  6 - Spotify в браузере      \n";
+        cout << "  5 - VPN в на компе      \n";
         cout << "  0 - Выйти\n";
 
         
@@ -52,8 +54,12 @@ int main(){
             system("start https://vk.com "); 
         }
         if ( choice == 6) { 
-            cout<< "Delete info in terminal ";
-            system("clr");
+            cout<< "Open Spotify... ";
+            system("start https://open.spotify.com/");
+        }
+        if ( choice == 7){
+            cout << "Open VPN...";
+            system("start v2RayTun.exe");
         }
       
         
