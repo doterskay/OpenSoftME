@@ -7,6 +7,7 @@ using namespace std;
 int main(){
     int choice;
     string months[]={"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+    SetConsoleOutputCP(CP_UTF8); 
 
 
     do{
@@ -20,7 +21,6 @@ int main(){
         cout << "  4 - Открыть YouTube в браузере      \n";
         cout << "  5 - VK в браузере      \n";
         cout << "  6 - Spotify в браузере      \n";
-        cout << "  5 - VPN в на компе      \n";
         cout << "  0 - Выйти\n";
 
         
@@ -36,31 +36,28 @@ int main(){
             << local->tm_min << ":" << local->tm_sec << "\n";
         }
 
-        if(choice == 2) {
+         else if(choice == 2) {
              cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
         }
-        if (choice == 3) { 
+        else if (choice == 3) { 
             cout << "\nTime: "<< local-> tm_hour<< ":"
             << local->tm_min << ":" << local->tm_sec << "\n";
             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
 
         }
-        if (choice == 4) {
-            cout << "Open Youtube im Browser.....\n";
+        else if (choice == 4) {
+            cout << "Open Youtube in Browser.....\n";
             system("start https://www.youtube.com");
         }
-        if( choice == 5) { 
-            cout<< "Open Vk music... \n";
+        else if( choice == 5) { 
+            cout<< "Open Vk .. \n";
             system("start https://vk.com "); 
         }
-        if ( choice == 6) { 
-            cout<< "Open Spotify... ";
-            system("start https://open.spotify.com/");
+         else if ( choice == 6) { 
+            cout<< "Open Spotify...\n";
+            system("start https://www.spotify.com");
         }
-        if ( choice == 7){
-            cout << "Open VPN...";
-            system("start v2RayTun.exe");
-        }
+     
       
         
     } while (choice != 0);
