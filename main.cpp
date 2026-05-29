@@ -18,6 +18,7 @@ int main(){
         cout << "  2 - Показать дату\n";
         cout << "  3 - Показать всё\n";
         cout << "  4 - Открыть YouTube в браузере      \n";
+        cout << "  5 - VK в браузере      \n";
         cout << "  0 - Выйти\n";
 
         
@@ -45,6 +46,14 @@ int main(){
         if (choice == 4) {
             cout << "Open Youtube im Browser.....\n";
             system("start https://www.youtube.com");
+        }
+        if( choice == 5) { 
+            cout<< "Open Vk music... \n";
+            system("start https://vk.com "); 
+        }
+        if ( choice == 6) { 
+            cout<< "Delete info in terminal ";
+            system("clr");
         }
       
         
