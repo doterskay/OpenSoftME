@@ -19,12 +19,11 @@ int main(){
         cout << "\n┌─────────────────────────────────┐\n";
         cout << "│         SYSTEM TIME v1.2        │\n";
         cout << "├─────────────────────────────────┤\n";
-        cout << "  1 - Показать всё\n";
+        cout << "  1 - Показать дату и время\n";
         cout << "  2 - Открыть YouTube в браузере      \n";
         cout << "  3 - VK в браузере      \n";
         cout << "  4 - Spotify в браузере      \n";
-        cout << "  5 - Ping in DNS 8.8.8.8      \n";
-        cout << "  6 - Открыть впн      \n";
+        cout << "  5 - Открыть впн      \n";
         cout << "  0 - Выйти\n";
         cout << "└─────────────────────────────────┘\n";
         cin >> choice;
@@ -54,11 +53,8 @@ int main(){
             cout<< "Open Spotify... ";
             system("start https://www.spotify.com");
         }
-        else if (choice == 5) {
-            cout<< "PING WIFI\n";
-            system("ping 8.8.8.8 -n 3");
-        }
-        else if ( choice == 6){
+        
+        else if ( choice == 5){
                   cout << "Open VPN";
         system("start \"\" \"C:\\Program Files (x86)\\v2RayTun\\v2RayTun.exe\"");
 
@@ -70,4 +66,3 @@ int main(){
    
     return 0;
 }
-// C:\Program Files (x86)\v2RayTun
