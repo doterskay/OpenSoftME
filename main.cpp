@@ -40,6 +40,8 @@ int main(){
             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
 
         }
+      
+        
     } while (choice != 0);
    
     return 0;
