@@ -20,11 +20,12 @@ int main(){
         cout << "│         SYSTEM TIME v1.2.1        │\n";
         cout << "├─────────────────────────────────┤\n";
         cout << "  1 - Показать дату и время\n";
-        cout << "  2 - Открыть YouTube в браузере      \n";
-        cout << "  3 - VK в браузере      \n";
-        cout << "  4 - Spotify в браузере      \n";
-        cout << "  5 - Открыть впн      \n";
-        cout << "  6 - Открыть telegram      \n";
+        cout << "  2- Открыть просто браузер\n";
+        cout << "  3 - Открыть YouTube в браузере      \n";
+        cout << "  4 - VK в браузере      \n";
+        cout << "  5 - Spotify в браузере      \n";
+        cout << "  6 - Открыть впн      \n";
+        cout << "  7 - Открыть telegram      \n";
         cout << "  0 - Выйти\n";
         cout << "└─────────────────────────────────┘\n";
         cin >> choice;
@@ -42,25 +43,29 @@ int main(){
             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
 
         }
-        else if (choice == 2) {
+        else if(choice == 2){
+            cout<< "Open Bwowser...";
+            system("start https://www.google.com/");
+        }
+        else if (choice == 3) {
             cout << "Open Youtube im Browser.....\n";
             system("start https://www.youtube.com");
         }
-        else if( choice == 3) { 
+        else if( choice == 4) { 
             cout<< "Open Vk music... \n";
             system("start https://vk.com "); 
         }
-        else if ( choice == 4) { 
+        else if ( choice == 5) { 
             cout<< "Open Spotify... ";
             system("start https://www.spotify.com");
         }
         
-        else if ( choice == 5){
+        else if ( choice == 6){
               cout << "Open VPN.....\n";
         system("start \"\" \"C:\\Program Files (x86)\\v2RayTun\\v2RayTun.exe\"");
 
         }
-        else if (choice == 6) {
+        else if (choice == 7) {
             cout << "Open telegram...\n";
             system("start \"\" \"C:\\Users\\tripelss\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe\"");
         }
