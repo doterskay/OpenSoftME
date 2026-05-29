@@ -24,6 +24,7 @@ int main(){
         cout << "  3 - VK в браузере      \n";
         cout << "  4 - Spotify в браузере      \n";
         cout << "  5 - Открыть впн      \n";
+        cout << "  6 - Открыть telegram      \n";
         cout << "  0 - Выйти\n";
         cout << "└─────────────────────────────────┘\n";
         cin >> choice;
@@ -55,9 +56,13 @@ int main(){
         }
         
         else if ( choice == 5){
-                  cout << "Open VPN";
+              cout << "Open VPN.....\n";
         system("start \"\" \"C:\\Program Files (x86)\\v2RayTun\\v2RayTun.exe\"");
 
+        }
+        else if (choice == 6) {
+            cout << "Open telegram...\n";
+            system("start \"\" \"C:\\Users\\tripelss\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe\"");
         }
      
       
