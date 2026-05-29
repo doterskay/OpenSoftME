@@ -27,32 +27,23 @@ int main(){
         tm* local = localtime(&now);
 
 
-
-        if(!(cin >> choice)) {
-            cout << "\n[Error] Please enter a number from 0 to 3.\n";
-            cin.clear();
-            cin.ignore(10000, '\n');
-            continue;
+        if(choice == 1) {
+            cout << "\n Time: "<< local-> tm_hour<< ":"
+            << local->tm_min << ":" << local->tm_sec << "\n";
         }
 
+        if(choice == 2) {
+             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
+        }
+        if (choice == 3) { 
+            cout << "\nTime: "<< local-> tm_hour<< ":"
+            << local->tm_min << ":" << local->tm_sec << "\n";
+            cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
 
-    //     if(choice == 1) {
-    //         cout << "\n Time: "<< local-> tm_hour<< ":"
-    //         << local->tm_min << ":" << local->tm_sec << "\n";
-    //     }
-
-    //     if(choice == 2) {
-    //          cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
-    //     }
-    //     if (choice == 3) { 
-    //         cout << "\nTime: "<< local-> tm_hour<< ":"
-    //         << local->tm_min << ":" << local->tm_sec << "\n";
-    //         cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
-
-    //     }
+        }
       
         
-    // } while (choice != 0);
+    } while (choice != 0);
    
     return 0;
 }
