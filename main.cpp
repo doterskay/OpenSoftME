@@ -7,7 +7,6 @@ using namespace std;
 int main(){
     int choice;
     string months[]={"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
-    SetConsoleOutputCP(CP_UTF8); 
 
 
     do{
@@ -31,12 +30,12 @@ int main(){
         tm* local = localtime(&now);
 
 
-        if(choice == 1) {
+        if (choice == 1) {
             cout << "\n Time: "<< local-> tm_hour<< ":"
             << local->tm_min << ":" << local->tm_sec << "\n";
         }
 
-         else if(choice == 2) {
+        else if(choice == 2) {
              cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
         }
         else if (choice == 3) { 
@@ -46,15 +45,15 @@ int main(){
 
         }
         else if (choice == 4) {
-            cout << "Open Youtube in Browser.....\n";
+            cout << "Open Youtube im Browser.....\n";
             system("start https://www.youtube.com");
         }
         else if( choice == 5) { 
-            cout<< "Open Vk .. \n";
+            cout<< "Open Vk music... \n";
             system("start https://vk.com "); 
         }
-         else if ( choice == 6) { 
-            cout<< "Open Spotify...\n";
+        else if ( choice == 6) { 
+            cout<< "Open Spotify... ";
             system("start https://www.spotify.com");
         }
      
