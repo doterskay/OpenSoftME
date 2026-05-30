@@ -42,33 +42,47 @@ int main(){
             cout << "\nTime: "<< local-> tm_hour<< ":"
             << local->tm_min << ":" << local->tm_sec << "\n";
             cout << local->tm_mday << " " << months[local-> tm_mon] << " "<< local->tm_year + 1900;
+            cout<<"\n";
+            system("pause");
 
         }
         else if(choice == 2){
             cout<< "Open Bwowser...";
             system("start https://www.google.com/");
+            cout<<"\n";
+            system("pause");
         }
         else if (choice == 3) {
             cout << "Open Youtube im Browser.....\n";
             system("start https://www.youtube.com");
+            cout<<"\n";
+            system("pause");
         }
         else if( choice == 4) { 
             cout<< "Open Vk music... \n";
             system("start https://vk.com "); 
+            cout<<"\n";
+            system("pause");
         }
         else if ( choice == 5) { 
             cout<< "Open Spotify... ";
             system("start https://www.spotify.com");
+            cout<<"\n";
+            system("pause");
         }
         
         else if ( choice == 6){
               cout << "Open VPN.....\n";
         system("start \"\" \"C:\\Program Files (x86)\\v2RayTun\\v2RayTun.exe\"");
+            cout<<"\n";
+            system("pause");
 
         }
         else if (choice == 7) {
             cout << "Open telegram...\n";
             system("start \"\" \"C:\\Users\\tripelss\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe\"");
+            cout<<"\n";
+            system("pause");
         }
         else if (choice == 8){
             cout<<"Погода по вашему место положени...";
