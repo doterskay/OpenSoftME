@@ -12,6 +12,7 @@ int main(){
 
 
     do{
+        system("cls");
 
         
         SetConsoleOutputCP(CP_UTF8);
