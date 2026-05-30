@@ -17,7 +17,7 @@ int main(){
         SetConsoleOutputCP(CP_UTF8);
 
         cout << "\n┌─────────────────────────────────┐\n";
-        cout << "│         SYSTEM TIME v1.2.1        │\n";
+        cout << "│         SYSTEM TIME v1.2.2        │\n";
         cout << "├─────────────────────────────────┤\n";
         cout << "  1 - Показать дату и время\n";
         cout << "  2- Открыть просто браузер\n";
@@ -26,6 +26,7 @@ int main(){
         cout << "  5 - Spotify в браузере      \n";
         cout << "  6 - Открыть впн      \n";
         cout << "  7 - Открыть telegram      \n";
+        cout << "  8 - Погода в вашем регионе      \n";
         cout << "  0 - Выйти\n";
         cout << "└─────────────────────────────────┘\n";
         cin >> choice;
@@ -68,6 +69,13 @@ int main(){
         else if (choice == 7) {
             cout << "Open telegram...\n";
             system("start \"\" \"C:\\Users\\tripelss\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe\"");
+        }
+        else if (choice == 8){
+            cout<<"Погода по вашему место положени...";
+            system("curl wttr.in/?0qM");
+            cout<<"\n";
+            system("pause");
+
         }
      
       
